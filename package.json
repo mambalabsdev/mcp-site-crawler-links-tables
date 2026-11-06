@@ -1,0 +1,50 @@
+{
+  "name": "@mambalabsdev/mcp-site-crawler-links-tables",
+  "version": "1.0.0",
+  "description": "MCP server for Site Crawler for Links and Tables. Crawl a site and get links, download links, HTML tables as rows, and lists. No code, no AI. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-site-crawler-links-tables": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "web-crawler",
+    "link-extractor",
+    "table-extractor",
+    "download-links",
+    "site-crawler",
+    "apify",
+    "clay"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/site-crawler-links-tables",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-site-crawler-links-tables"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-site-crawler-links-tables"
+}
