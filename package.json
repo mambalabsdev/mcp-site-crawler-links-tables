@@ -1,6 +1,6 @@
 {
   "name": "@mambalabsdev/mcp-site-crawler-links-tables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Site Crawler for Links and Tables. Crawl a site and get links, download links, HTML tables as rows, and lists. No code, no AI. Runs on Apify. Clay-ready output.",
   "type": "module",
   "bin": {
